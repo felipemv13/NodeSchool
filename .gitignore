@@ -1,2 +1,3 @@
 # ignorando dirs
-javascript/node_modules/**/*
+javascripting/node_modules/**/*
+learnyounode/
