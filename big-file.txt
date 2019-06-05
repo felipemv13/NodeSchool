@@ -1,0 +1,8 @@
+Uma stream é uma forma de representar uma sequencia de bits, uma coleção de dados – como arrays ou strings – mas a diferença é que os dados em uma stream podem não estar disponíveis todos de uma vez, e, além disso, eles também não precisam utilizar a memória, ou seja, não é necessário que esses bits sejam armazenados na RAM.
+Isto torna as streams ferramentas poderosas para desenvolvimento focado em grandes massas de dados, pois podemos trabalhar em pequenos pedaços (chunks, como são chamados) e continuamente, sem precisar salvar nada na memória.
+Para ficar mais fácil, imagine um rio. O fluxo do rio é único e sempre corrente (não podemos parar o rio) – inclusive esta é a origem do nome “stream”, que significa “fluxo” em inglês – mas podemos desviar seu curso, modificar a água corrente, retardar ou até impedir o avanço de uma determinada porção dele.
+Streams podem ter duas formas: a writable stream e a readable stream. Alguns exemplos de writable streams, são:
+-	Requisições HTTP enviadas pelo cliente
+-	Respostas HTTP enviadas pelo server (res.send() é uma stream)
+-	No módulo fs podemos criar uma writableStream para qualquer arquivo e escrever nela
+-	process.stdout, process.stderr são exemplos de streams que são manipuladas por uma API famosa, chamada console.log e console.error que você já deve ter usado.

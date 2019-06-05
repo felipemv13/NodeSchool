@@ -1,0 +1,8 @@
+Começando com ECMAScript 6, JavaScript ganha suporte para objetos Promise (de "promessa") que lhe permite controlar o fluxo de operações diferídas e assíncronas. Um Promise representa um valor que pode estar disponível agora, no futuro ou nunca.
+Uma Promise assume um destes estados:
+-	pending: estado inicial, não fulfilled, ou rejected.
+-	fulfilled: operação bem sucedida.
+-	rejected: operação falha.
+-	settled: A Promise é fulfilled ou rejected, mas não pending.
+
+Uma promessa pendente pode se tonar realizada com um valor ou rejeitada por um motivo (erro). Quando um desses estados ocorre, o método then do Promise é chamado, e ele chama o método de tratamento associado ao estado (rejected ou resolved). (Se a promessa foi realizada ou rejeitada quando o método de tratamento correspondente for associado, o método será chamado, deste forma não há uma condição de competição entre uma operação assíncrona e seus manipuladores que estão sendo associados.)
